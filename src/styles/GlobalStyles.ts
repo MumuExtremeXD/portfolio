@@ -46,7 +46,7 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
   :root {
-    --blue: #B50000;
+    --blue: #0043D5;
     --yellow: #fff;
     --white:#FFFFFF;
     --black:#231F20;

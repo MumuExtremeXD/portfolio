@@ -90,7 +90,7 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
             <div className="DivTextos">
               <h3>Projetos</h3>
               <h4>
-                Total de projetos: <label>{4}</label>
+                Total de projetos: <label>{3}</label>
               </h4>
             </div>
 
