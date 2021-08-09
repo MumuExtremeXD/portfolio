@@ -47,53 +47,25 @@ export const RightSide = styled.div`
   @media (min-width: 768px) {
     width: 75%;
   }
-`;
 
-export const ProductsBox = styled.div`
-  margin-top: var(--verticalPadding);
-  padding: 0 var(--horizontalPadding);
-
-  > .DivTextos {
+  .ImgBuild {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 0px;
+    justify-content: center;
 
-    > h3 {
-      font-size: 20px;
-      font-weight: 500;
-      color: var(--black);
+    margin-top: 35px;
+    padding: 40px;
+
+    max-width: 750px;
+
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
     }
 
-    > h4 {
-      font-weight: normal;
-      color: var(--black);
-
-      > label {
-        font-weight: 800;
-      }
-    }
-  }
-
-  > .DivProdutos {
-    display: grid;
-    grid-gap: 6px;
-
-    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
-
-    @media (min-width: 767px) {
-      grid-auto-rows: minmax(min-content, max-content);
-    }
-    @media (max-width: 767px) {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    }
-
-    @media (max-width: 550px) {
-      min-width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    > img {
+      width: 100%;
     }
   }
 `;
@@ -197,29 +169,5 @@ export const Tab = styled.div`
         margin-right: var(--horizontalPadding);
       }
     }
-  }
-`;
-
-export const LoadingContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 15% 55% 25% 20%;
-
-  > svg {
-    width: 100%;
-  }
-
-  @media (max-width: 1440px) {
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media (max-width: 425px) {
-    align-items: center;
-    justify-content: center;
-
-    margin: 0;
   }
 `;

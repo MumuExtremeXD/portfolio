@@ -1,17 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import {
-  Container,
-  Main,
-  LeftSide,
-  RightSide,
-  ProductsBox,
-  Tab,
-} from "./styles";
+import { Container, Main, LeftSide, RightSide, Tab } from "./styles";
 
 import CompanyData from "../../components/CompanyData";
-import ProductsData from "../../components/ProductsData";
 
 interface CompanyInfoXD {
   id: number;
@@ -29,8 +21,7 @@ interface CompanyInfoXD {
   segment: number;
 }
 
-import Proj1 from "../../Assets/Images/Proj1.png";
-import Proj3 from "../../Assets/Images/Proj3.png";
+import Build from "../../Assets/Images/Build.png";
 
 const PageProduct: React.FC<CompanyInfoXD> = () => {
   return (
@@ -41,11 +32,11 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
             <span className="offset" />
             <div className="content">
               <span className="label">
-                <Link to={`../`}>Designer</Link>
+                <Link to={`../`}>Design</Link>
               </span>
 
               <span className="label active">
-                <Link to={`../Dev`}>Programador</Link>
+                <Link to={`../Dev`}>Programação</Link>
               </span>
             </div>
           </div>
@@ -72,47 +63,9 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
         </LeftSide>
 
         <RightSide>
-          <Tab className="mobile">
-            <div className="content">
-              <span className="label">
-                <Link to={`../`}>Designer</Link>
-              </span>
-
-              <span className="label active">
-                <Link to={`../Dev`}>Programador</Link>
-              </span>
-            </div>
-            <span className="line" />
-          </Tab>
-
-          <ProductsBox>
-            <div className="DivTextos">
-              <h3>Projetos</h3>
-              <h4>
-                Total de projetos: <label>{2}</label>
-              </h4>
-            </div>
-
-            <div className="DivProdutos">
-              <ProductsData
-                key={1}
-                idProd={1}
-                nameProd={"PortFolio"}
-                imgProd={Proj1}
-                dataWork={"15-08-2021"}
-                description={"Testando tudo XD"}
-              />
-
-              <ProductsData
-                key={2}
-                idProd={2}
-                nameProd={"Calculadora"}
-                imgProd={Proj3}
-                dataWork={"15-08-2021"}
-                description={"Testando tudo XD"}
-              />
-            </div>
-          </ProductsBox>
+          <div className="ImgBuild">
+            <img src={Build} alt="" />
+          </div>
         </RightSide>
       </Main>
     </Container>

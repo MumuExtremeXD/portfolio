@@ -20,7 +20,7 @@ export const Flex = styled.div`
       border-radius: 40px;
 
       color: var(--white);
-      background: var(--black);
+      background: var(--blue);
 
       display: flex;
       align-items: center;
@@ -38,7 +38,7 @@ export const Flex = styled.div`
       cursor: pointer;
 
       &:hover {
-        background: var(--blue);
+        background: var(--black);
       }
     }
   }
@@ -100,8 +100,17 @@ export const Avatar = styled.img`
   background-color: var(--white);
   border-radius: 50%;
 
+  width: 70%;
+
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+
+  transition: all 1s;
+
+  &:hover {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
 
   @media (min-width: 768px) {
     margin-top: -60px;

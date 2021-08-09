@@ -32,6 +32,7 @@ interface CompanyInfoXD {
 import Proj1 from "../../Assets/Images/Proj1.png";
 import Proj2 from "../../Assets/Images/Proj2.png";
 import Proj3 from "../../Assets/Images/Proj3.png";
+import Proj4 from "../../Assets/Images/Proj4.png";
 
 const PageProduct: React.FC<CompanyInfoXD> = () => {
   return (
@@ -42,11 +43,11 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
             <span className="offset" />
             <div className="content">
               <span className="label active">
-                <Link to={`../`}>Designer</Link>
+                <Link to={`../`}>Design</Link>
               </span>
 
               <span className="label">
-                <Link to={`../Dev`}>Programador</Link>
+                <Link to={`../Dev`}>Programação</Link>
               </span>
             </div>
           </div>
@@ -76,11 +77,11 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
           <Tab className="mobile">
             <div className="content">
               <span className="label active">
-                <Link to={`../`}>Designer</Link>
+                <Link to={`../`}>Design</Link>
               </span>
 
               <span className="label">
-                <Link to={`../Dev`}>Programador</Link>
+                <Link to={`../Dev`}>Programação</Link>
               </span>
             </div>
             <span className="line" />
@@ -90,27 +91,19 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
             <div className="DivTextos">
               <h3>Projetos</h3>
               <h4>
-                Total de projetos: <label>{3}</label>
+                Total de projetos: <label>{4}</label>
               </h4>
             </div>
 
             <div className="DivProdutos">
               <ProductsData
-                key={1}
-                idProd={1}
-                nameProd={"Social Media - Batatas Marvel"}
-                imgProd={Proj1}
-                dataWork={"15-08-2021"}
-                description={"Testando tudo XD"}
-              />
-
-              <ProductsData
-                key={2}
-                idProd={2}
-                nameProd={"UI - TodaObra"}
-                imgProd={Proj3}
-                dataWork={"15-08-2021"}
-                description={"Testando tudo XD"}
+                key={4}
+                idProd={4}
+                nameProd={"Projetos com Double Diamond"}
+                imgProd={Proj4}
+                linkWork={
+                  "www.behance.net/gallery/125011195/Organizando-Projetos-com-Double-Diamond"
+                }
               />
 
               <ProductsData
@@ -118,8 +111,29 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
                 idProd={2}
                 nameProd={"Social Media - Mister Gesso"}
                 imgProd={Proj2}
-                dataWork={"15-08-2021"}
-                description={"Testando tudo XD"}
+                linkWork={
+                  "https://www.behance.net/gallery/124703391/Social-Media-Mister-Gesso"
+                }
+              />
+
+              <ProductsData
+                key={3}
+                idProd={3}
+                nameProd={"UI - TodaObra"}
+                imgProd={Proj3}
+                linkWork={
+                  "https://www.behance.net/gallery/124650063/UI-Design-TodaObra"
+                }
+              />
+
+              <ProductsData
+                key={1}
+                idProd={1}
+                nameProd={"Social Media - Batatas Marvel"}
+                imgProd={Proj1}
+                linkWork={
+                  "https://www.behance.net/gallery/124630377/Social-Media-Batatas-Marvel"
+                }
               />
             </div>
           </ProductsBox>
