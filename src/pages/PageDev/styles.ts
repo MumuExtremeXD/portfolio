@@ -57,6 +57,7 @@ export const RightSide = styled.div`
     padding: 40px;
 
     max-width: 750px;
+    min-width: 300px;
 
     transition: all 0.3s ease-out;
 
@@ -65,6 +66,11 @@ export const RightSide = styled.div`
     }
 
     > img {
+      width: 100%;
+    }
+
+    @media (max-width: 630px) {
+      padding: 20px;
       width: 100%;
     }
   }
@@ -118,13 +124,6 @@ export const Tab = styled.div`
     .label:first-child {
       margin: 0px 10px 0px 0px;
     }
-  }
-
-  .line {
-    display: flex;
-    width: 200vw;
-    border-bottom: 1px solid var(--white);
-    margin-left: -50vw;
   }
 
   &.mobile {

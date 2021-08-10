@@ -63,6 +63,18 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
         </LeftSide>
 
         <RightSide>
+          <Tab className="mobile">
+            <div className="content">
+              <span className="label">
+                <Link to={`../`}>Design</Link>
+              </span>
+
+              <span className="label active">
+                <Link to={`../Dev`}>Programação</Link>
+              </span>
+            </div>
+          </Tab>
+
           <div className="ImgBuild">
             <img src={Build} alt="" />
           </div>

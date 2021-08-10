@@ -148,13 +148,6 @@ export const Tab = styled.div`
     }
   }
 
-  .line {
-    display: flex;
-    width: 200vw;
-    border-bottom: 1px solid var(--white);
-    margin-left: -50vw;
-  }
-
   &.mobile {
     margin-top: 35px;
     background-color: var(--blue);

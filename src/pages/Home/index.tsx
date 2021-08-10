@@ -84,7 +84,6 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
                 <Link to={`../Dev`}>Programação</Link>
               </span>
             </div>
-            <span className="line" />
           </Tab>
 
           <ProductsBox>
@@ -102,7 +101,7 @@ const PageProduct: React.FC<CompanyInfoXD> = () => {
                 nameProd={"Projetos com Double Diamond"}
                 imgProd={Proj4}
                 linkWork={
-                  "www.behance.net/gallery/125011195/Organizando-Projetos-com-Double-Diamond"
+                  "https://www.behance.net/gallery/125011195/Organizando-Projetos-com-Double-Diamond"
                 }
               />
 
