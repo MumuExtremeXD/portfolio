@@ -4,7 +4,6 @@ import { Container, InfoBox } from "./styles";
 
 interface PropsProd {
   id?: number;
-  idProd?: number;
   nameProd?: string;
   imgProd?: string;
   linkWork?: string;
@@ -12,7 +11,6 @@ interface PropsProd {
 
 const ProductsData: React.FC<PropsProd> = ({
   id,
-  idProd,
   nameProd,
   imgProd,
   linkWork,
@@ -20,7 +18,7 @@ const ProductsData: React.FC<PropsProd> = ({
   return (
     <>
       <a href={linkWork} target="_blank" rel="noreferrer">
-        <Container className={`XD-${idProd}`} key={id}>
+        <Container key={id}>
           <img src={imgProd} alt={imgProd} />
 
           <InfoBox>
