@@ -2,8 +2,16 @@ import Proj1 from "../Assets/Images/Proj1.png";
 import Proj2 from "../Assets/Images/Proj2.png";
 import Proj3 from "../Assets/Images/Proj3.png";
 import Proj4 from "../Assets/Images/Proj4.png";
+import Proj5 from "../Assets/Images/Proj5.png";
 
 export default [
+  {
+    nameProd: "Social Media - Silveira Serralheria",
+    imgProd: `${Proj5}`,
+    linkWork:
+      "https://www.behance.net/gallery/125288157/Social-Media-Silveira-Serralheria",
+  },
+
   {
     nameProd: "Projetos com Double Diamond",
     imgProd: `${Proj4}`,
