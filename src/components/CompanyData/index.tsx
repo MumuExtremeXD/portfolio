@@ -9,6 +9,7 @@ import Perfil from "../../Assets/Images/pp.png";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import PinterestIcon from "@material-ui/icons/Pinterest";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -131,6 +132,18 @@ const CompanyData: React.FC<Props> = ({
             </span>
           </li>
         )}
+
+        <li>
+          <span>
+            <a
+              href={`https://br.pinterest.com/matheussouzalima88/_saved/`}
+              target="_blank"
+            >
+              <PinterestIcon />
+              matheussouzalima88
+            </a>
+          </span>
+        </li>
       </Column>
     </Container>
   );
