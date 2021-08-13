@@ -6,10 +6,10 @@ import Proj5 from "../Assets/Images/Proj5.png";
 
 export default [
   {
-    nameProd: "Social Media - Silveira Serralheria",
-    imgProd: `${Proj5}`,
+    nameProd: "Social Media - Mister Gesso",
+    imgProd: `${Proj2}`,
     linkWork:
-      "https://www.behance.net/gallery/125288157/Social-Media-Silveira-Serralheria",
+      "https://www.behance.net/gallery/124703391/Social-Media-Mister-Gesso",
   },
 
   {
@@ -20,10 +20,10 @@ export default [
   },
 
   {
-    nameProd: "Social Media - Mister Gesso",
-    imgProd: `${Proj2}`,
+    nameProd: "Social Media - Batatas Marvel",
+    imgProd: `${Proj1}`,
     linkWork:
-      "https://www.behance.net/gallery/124703391/Social-Media-Mister-Gesso",
+      "https://www.behance.net/gallery/124630377/Social-Media-Batatas-Marvel",
   },
 
   {
@@ -33,9 +33,9 @@ export default [
   },
 
   {
-    nameProd: "Social Media - Batatas Marvel",
-    imgProd: `${Proj1}`,
+    nameProd: "Social Media - Silveira Serralheria",
+    imgProd: `${Proj5}`,
     linkWork:
-      "https://www.behance.net/gallery/124630377/Social-Media-Batatas-Marvel",
+      "https://www.behance.net/gallery/125288157/Social-Media-Silveira-Serralheria",
   },
 ];
